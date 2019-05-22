@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Gregs-List</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Gregs-List*</h1>
+            </div>
+            <div class="col-12">
+                <button onclick="app.controllers.carController.renderCars()">Cars</button>
+                <button onclick="app.controllers.propertyController.renderProperties()">Properties</button>
+                <button>Jobs</button>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col" id="form-content">
+            </div>
+        </div>
+        <div class="row" id="cars">
+        </div>
+    </main>
+    <footer class="container">
+        <div class="row">
+            <div class="col text-center">
+                <p><small>*no affiliation to craigslist</small></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
