@@ -9,7 +9,7 @@ function _drawCars() {
     cars.forEach(car => {
         template += car.Template
     })
-    document.getElementById('cars').innerHTML = template
+    document.getElementById('listings').innerHTML = template
 }
 
 function _drawForm() {
@@ -54,13 +54,11 @@ export default class CarController {
         //register subscribers
         _carService.addSubscriber('cars', _drawCars)
 
-        //get data
-        _carService.getAllCars()
     }
 
     renderCars() {
-        _drawCars();
         _drawForm();
+        _carService.getAllCars() //get data
     }
 
     addCar(event) {
